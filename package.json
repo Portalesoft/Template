@@ -1,0 +1,40 @@
+{
+  "name": "template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf dist",
+    "build-prd": "NODE_ENV=production npm run clean && webpack -p",
+    "build-dev": "NODE_ENV=development npm run clean && webpack"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.4",
+    "extract-text-webpack-plugin": "^2.1.2",
+    "file-loader": "^0.11.2",
+    "html-webpack-plugin": "^2.29.0",
+    "image-webpack-loader": "^3.3.1",
+    "node-sass": "^4.5.3",
+    "rimraf": "^2.6.1",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.18.2",
+    "url-loader": "^0.5.9",
+    "webpack": "^2.2.0",
+    "webpack-dev-middleware": "^1.11.0"
+  },
+  "dependencies": {
+    "compression": "^1.7.0",
+    "express": "^4.15.3",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-redux": "^5.0.5",
+    "react-router": "^4.1.2",
+    "redux": "^3.7.2"
+  }
+}
